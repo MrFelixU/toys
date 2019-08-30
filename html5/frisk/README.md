@@ -5,6 +5,7 @@ Each territory needs:
   but it seems nicer to allow the map-builder to define these inline)
 - current number of armies
 - the current ruler
+- to know which continent it belongs to
 
 Each player needs:
 - an id
@@ -14,3 +15,21 @@ Each player needs:
 The game needs to:
 - know whose turn it is
 - update each territory's info after a move
+- keep track of each player's info
+
+# Behaviour
+
+There should be different "phases":
+
+1. place your fresh armies
+1. attack some neighbours
+1. mobilise troops
+
+
+# Interface
+
+The screen needs:
+
+- a list of players with their current status and stats
+- the map with the territory info
+- the dice and phase interface
