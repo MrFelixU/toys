@@ -1,24 +1,65 @@
 var svgNS = "http://www.w3.org/2000/svg";
-var attacker = null;
-var attacked = null;
+var friskNS = "https://github.com/MrFelixU/toys";
+var currentplayer = null;
+var phase = null;
+var svgroot = null;
+var playernames = null;
 
+window.addEventListener("load", initGame);
 
-window.addEventListener("load", loadMap);
+function initGame() {
 
-function loadMap() {
+  // let's set up the players
+  var numplayers = 0;
+  while (numplayers < 2 ){
+    //var str_players = prompt("Please enter at least two player names, separated by commas");
+    var str_players = "Tom,Dick,Harriet";
+    playernames = str_players.split(",");
+    for (i=0; i<playernames.length; i++) playernames[i] = playernames[i].trim();
+    numplayers = playernames.length;
+  }
 
-  var svgEl = document.getElementById("mapobj").contentDocument;
-  var countries = svgEl.getElementsByClassName("country");
+  initPlayers();
+
+  svgroot = document.getElementById("mapobj").contentDocument;
+  var countries = svgroot.getElementsByClassName("country");
   for (i=0; i < countries.length; i++) {
     var c = countries[i];
     c.setAttribute("frisk:armies", 1);
-    textEl = svgEl.getElementById(c.id + "-armies")
+    textEl = svgroot.getElementById(c.id + "-armies");
     textEl.textContent = 1;
+  }
+
+  updateInfo();
+}
+
+function initPlayers() {
+  var el_players = document.getElementById("players");
+  var playertemplate = document.getElementById("playertemplate");
+  for (i=0; i<playernames.length; i++){
+    var newplayerli = playertemplate.cloneNode(true);
+    newplayerli.id = "player" + (i+"").padStart(2,"0");
+    newplayerli.getElementsByClassName("playername")[0].innerHTML = playernames[i];
+    el_players.appendChild(newplayerli);
+  }
+  el_players.removeChild(playertemplate);
+}
+
+function updateInfo() {
+  var countries = svgroot.getElementsByClassName("country");
+  for (i=0; i < countries.length; i++) {
+    var c = countries[i];
+    textEl = svgroot.getElementById(c.id + "-armies");
+    textEl.textContent = c.getAttribute("frisk:armies");
   }
 }
 
 
-//window.addEventListener("load",grabMap);
+
+
+/*  The old stuff, here just for reference, REMOVE SOON!
+
+*/
 
 function isAttackPossible() {
     if ( attacker && attacked && parseInt(attacker.getAttribute("frisk:armies")) > 1) {

@@ -1,4 +1,4 @@
-svg.map {
+#mapobj {
 border: 1px solid #000;
 display: block;
 }
@@ -9,5 +9,46 @@ font-weight: bold;
 border: 2px solid #999;
 }
 
+#players li {
+  list-style-type: none;
+}
+
+#players li span:first-of-type {
+  font-size: 150%;
+  font-weight: bold;
+  border: none;
+}
+
+#players span {
+  margin: 0ex 1ex;
+  padding: 0ex 1ex;
+  border-style: solid;
+  border-size: 0.1ex 0ex 0.1ex 0ex;
+  border-color: black;
+}
 
 
+#dice li {
+  display: inline-block;
+  list-style-type: none;
+  border-style: dashed;
+  border-width: 0.2ex;
+  border-color: red;
+  border-radius: 0.1ex;
+  margin: 1ex;
+  padding: 1ex;
+  min-height: 2em;
+  min-width: 2em;
+  line-height: 2em;
+  color: #600;
+  background-color: #ffddbb;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+#dice li.inactive {
+  color: #666;
+  border-color: #999;
+}
