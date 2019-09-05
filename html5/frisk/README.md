@@ -33,3 +33,8 @@ The screen needs:
 - a list of players with their current status and stats
 - the map with the territory info
 - the dice and phase interface
+
+
+# Some useful references perhaps?
+
+https://stackoverflow.com/questions/14068031/embedding-external-svg-in-html-for-javascript-manipulation
