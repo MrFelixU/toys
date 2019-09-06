@@ -64,8 +64,8 @@ function initCountries() {
   shuffled = shuffle(shuffled);
   for (i=0; i<shuffled.length; i++) {
     p_idx = i % playernames.length; // rotate through the players
-    shuffled[i].setAttribute("frisk:ruler", p_idx);
-    shuffled[i].setAttribute("frisk:armies", 1);
+    shuffled[i].setAttribute("data-ruler", p_idx);
+    shuffled[i].setAttribute("data-armies", 1);
   }
 }
 
@@ -79,10 +79,11 @@ function updateInfo() {
   // display each country's ruler and number of armies
   for (i=0; i < countries.length; i++) {
     var c = countries[i];
+    console.log("updating "+c.id);
     textEl = svgroot.getElementById(c.id + "-armies");
-    textEl.textContent = c.getAttribute("frisk:armies");
+    textEl.textContent = c.getAttribute("data-armies");
     textEl = svgroot.getElementById(c.id + "-ruler");
-    textEl.textContent = playernames[parseInt(c.getAttribute("frisk:ruler"))];
+    textEl.textContent = playernames[parseInt(c.getAttribute("data-ruler"))];
   }
 
   // show players' stats
@@ -108,8 +109,8 @@ function countryClicked(e){
   console.log("we're in the "+phase+" phase with a target of "+e.target.id);
   el_country = e.target;
   if (phase == "DEPLOY") {
-    if (el_country.getAttribute("frisk:ruler") == currentplayeridx) {
-      el_country.setAttribute("frisk:armies", parseInt(el_country.getAttribute("frisk:armies")) + 1);
+    if (el_country.getAttribute("data-ruler") == currentplayeridx) {
+      el_country.setAttribute("data-armies", parseInt(el_country.getAttribute("data-armies")) + 1);
       armiestodeploy--;
     }
     if (armiestodeploy <=0) {
@@ -146,8 +147,8 @@ function countPlayerArmiesAndCountries(pidx) {
   parmies = 0;
   pcountries = 0;
   for (c=0;c<countries.length;c++){
-    if (countries[c].getAttribute("frisk:ruler") == pidx) {
-      parmies += parseInt(countries[c].getAttribute("frisk:armies"));
+    if (countries[c].getAttribute("data-ruler") == pidx) {
+      parmies += parseInt(countries[c].getAttribute("data-armies"));
       pcountries++;
     }
   }

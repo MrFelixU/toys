@@ -10,6 +10,6 @@ Each shape element which represents a country needs to have the following:
 
 - a text element somewhere sensible with the same id plus a suffix of `-name`,  e.g. `id="southafrica-name"` and also an attribute of `class="countrynamelabel"`
 
-- a text element somewhere sensible with the same id plus a suffix of `-armies`,  e.g. `id="southafrica-Armies"` and also an attribute of `class="countryarmieslabel"`
+- a text element somewhere sensible with the same id plus a suffix of `-armies`,  e.g. `id="southafrica-armies"` and also an attribute of `class="countryarmieslabel"`
 
 - a text element somewhere sensible with the same id plus a suffix of `-ruler`,  e.g. `id="southafrica-ruler"` and also an attribute of `class="countryrulerlabel"`
