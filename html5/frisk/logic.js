@@ -1,39 +1,52 @@
 var svgNS = "http://www.w3.org/2000/svg";
 var friskNS = "https://github.com/MrFelixU/toys";
-var currentplayer = null;
+var currentplayeridx = null;
 var phase = null;
 var svgroot = null;
 var playernames = null;
+var countries = null;
+var armiestodeploy = null;
 
 window.addEventListener("load", initGame);
 
 function initGame() {
+  // grab the "country" elements from the svg
+  loadCountries();
+
+  // read in the player names, set up interface
+  initPlayers();
+
+  // randomly assign countries to players
+  initCountries();
+
+  // get ready to play, set first player, phase=deploy
+  setupFirstPhase();
+
+  // update all the relevant info on screen
+  updateInfo();
+}
+
+
+function loadCountries() {
+  svgroot = document.getElementById("mapobj").contentDocument;
+  countries = svgroot.getElementsByClassName("country");
+  for (i=0;i<countries.length;i++) {
+    countries[i].addEventListener("click",countryClicked);
+  }
+}
+
+function initPlayers() {
 
   // let's set up the players
   var numplayers = 0;
   while (numplayers < 2 ){
-    //var str_players = prompt("Please enter at least two player names, separated by commas");
-    var str_players = "Tom,Dick,Harriet";
+    var str_players = prompt("Please enter at least two player names, separated by commas");
+    //var str_players = "Tom,Dick,Harriet";
     playernames = str_players.split(",");
     for (i=0; i<playernames.length; i++) playernames[i] = playernames[i].trim();
     numplayers = playernames.length;
   }
 
-  initPlayers();
-
-  svgroot = document.getElementById("mapobj").contentDocument;
-  var countries = svgroot.getElementsByClassName("country");
-  for (i=0; i < countries.length; i++) {
-    var c = countries[i];
-    c.setAttribute("frisk:armies", 1);
-    textEl = svgroot.getElementById(c.id + "-armies");
-    textEl.textContent = 1;
-  }
-
-  updateInfo();
-}
-
-function initPlayers() {
   var el_players = document.getElementById("players");
   var playertemplate = document.getElementById("playertemplate");
   for (i=0; i<playernames.length; i++){
@@ -45,91 +58,103 @@ function initPlayers() {
   el_players.removeChild(playertemplate);
 }
 
+function initCountries() {
+  var shuffled = [];
+  for (i=0;i<countries.length;i++) shuffled.push(countries[i]);
+  shuffled = shuffle(shuffled);
+  for (i=0; i<shuffled.length; i++) {
+    p_idx = i % playernames.length; // rotate through the players
+    shuffled[i].setAttribute("frisk:ruler", p_idx);
+    shuffled[i].setAttribute("frisk:armies", 1);
+  }
+}
+
+function setupFirstPhase() {
+  currentplayeridx = 0;
+  phase = "DEPLOY";
+  armiestodeploy = 3;
+}
+
 function updateInfo() {
-  var countries = svgroot.getElementsByClassName("country");
+  // display each country's ruler and number of armies
   for (i=0; i < countries.length; i++) {
     var c = countries[i];
     textEl = svgroot.getElementById(c.id + "-armies");
     textEl.textContent = c.getAttribute("frisk:armies");
+    textEl = svgroot.getElementById(c.id + "-ruler");
+    textEl.textContent = playernames[parseInt(c.getAttribute("frisk:ruler"))];
   }
-}
+
+  // show players' stats
+
+  playernames.forEach(
+    function (pname,pidx,pnames){
+      playerstats = countPlayerArmiesAndCountries(pidx);
 
 
-
-
-/*  The old stuff, here just for reference, REMOVE SOON!
-
-*/
-
-function isAttackPossible() {
-    if ( attacker && attacked && parseInt(attacker.getAttribute("frisk:armies")) > 1) {
-	return true;
-    } else {
-	return false;
+      p_el_id = "player" + (pidx+"").padStart(2,"0");
+      p_el = document.getElementById(p_el_id);
+      if (pcountries <= 0) p_el.setAttribute("class", "inactive"); // player is out
+      p_el.getElementsByClassName("playerphase")[0].innerHTML =
+        (pidx==currentplayeridx ? phase : "idle");
+      p_el.getElementsByClassName("playerarmies")[0].innerHTML = "Armies: " + playerstats.armies;
+      p_el.getElementsByClassName("playercountries")[0].innerHTML = "Countries: " + playerstats.countries;
     }
-}
-
-
-function displayInfo() {
-    if (attacker) {
-	attackerName = attacker.getAttribute("frisk:name");
-    } else {
-	attackerName = "";
-    }
-
-    document.getElementById("origin").value = attackerName;
-
-    if (attacked) {
-	attackedName = attacked.getAttribute("frisk:name");
-    } else {
-	attackedName = "";
-    }
-
-    document.getElementById("target").value = attackedName;
-
-    if (isAttackPossible()) {
-	document.getElementById("attackbutton").disabled = false;
-    }
+  );
 
 }
 
-
-function clickedCountry(el) {
-    var attackerName = null;
-    var attackedName = null;
-
-    if ((attacker) && (el == attacker)) {
-	attacker = null;
-	attacked = null;
-    } else if ( ! attacker) {
-	attacker = el;
-    } else if (attacker) {
-	attacked = el;
+function countryClicked(e){
+  console.log("we're in the "+phase+" phase with a target of "+e.target.id);
+  el_country = e.target;
+  if (phase == "DEPLOY") {
+    if (el_country.getAttribute("frisk:ruler") == currentplayeridx) {
+      el_country.setAttribute("frisk:armies", parseInt(el_country.getAttribute("frisk:armies")) + 1);
+      armiestodeploy--;
     }
-
-    displayInfo();
+    if (armiestodeploy <=0) {
+      phase = "ATTACK";
+    }
+  }
+  updateInfo();
 }
 
-function prepareMap(svg) {
+/* ****************************************************************************
 
-    var map = document.getElementById("themap");
+   UTILITY FUNCTIONS
 
-    var countries = map.getElementsByTagName("rect");
+**************************************************************************** */
 
-    for (i = 0; i < countries.length; i++) {
-	var c = countries[i];
+function shuffle(array) {
+  var m = array.length, t, i;
 
-	var newText = document.createElementNS(svgNS,"text");
-	newText.setAttributeNS(null, "id", c.id + "label");
-	newText.setAttributeNS(null, "x", parseInt(c.getAttribute("x")) + 10);
-	newText.setAttributeNS(null, "y", parseInt(c.getAttribute("y")) + 20);
-	newText.setAttributeNS(null, "font-size", "12");
-	newText.setAttributeNS(null, "style", "fill: #fff; stroke: #000; stroke-width: 1px;");
+  // While there remain elements to shuffle…
+  while (m) {
 
-	var textNode = document.createTextNode(c.getAttribute("frisk:name"));
-	newText.appendChild(textNode);
-	map.appendChild(newText);
+    // Pick a remaining element…
+    i = Math.floor(Math.random() * m--);
 
+    // And swap it with the current element.
+    t = array[m];
+    array[m] = array[i];
+    array[i] = t;
+  }
+  return array;
+}
+
+function countPlayerArmiesAndCountries(pidx) {
+  parmies = 0;
+  pcountries = 0;
+  for (c=0;c<countries.length;c++){
+    if (countries[c].getAttribute("frisk:ruler") == pidx) {
+      parmies += parseInt(countries[c].getAttribute("frisk:armies"));
+      pcountries++;
     }
+  }
+  return {"armies": parmies, "countries" : pcountries};
+}
 
+function calculateDeployableArmies(pidx) {
+  pcountries = countPlayerArmiesAndCountries(pidx).countries;
+  return Math.min(3, Math.floor(pcountries / 3));
 }

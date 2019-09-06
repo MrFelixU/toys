@@ -27,6 +27,9 @@ border: 2px solid #999;
   border-color: black;
 }
 
+#players .inactive {
+  text-decoration: line-through;
+}
 
 #dice li {
   display: inline-block;
@@ -41,7 +44,7 @@ border: 2px solid #999;
   min-width: 2em;
   line-height: 2em;
   color: #600;
-  background-color: #ffddbb;
+  background-color: #ffcc99;
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
@@ -49,6 +52,7 @@ border: 2px solid #999;
 }
 
 #dice li.inactive {
-  color: #666;
+  color: #999;
   border-color: #999;
+  background-color: #ffeedd;
 }

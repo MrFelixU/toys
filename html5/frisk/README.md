@@ -21,9 +21,9 @@ The game needs to:
 
 There should be different "phases":
 
-1. place your fresh armies
-1. attack some neighbours
-1. mobilise troops
+1. [deploy] your fresh armies
+1. [attack] some neighbours
+1. [mobilise] troops
 
 
 # Interface

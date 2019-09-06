@@ -36,7 +36,7 @@
      style="fill:#0062ff;stroke:#000000"
      d="m 130.79222,131.8093 c 22.033,-17.191 90.182,-6.603 120.576,-7.627 69.2,-2.331 122.712,7.384 124.573,9.806 4.603,5.989 16.452,73.265 15.617,99.513 -1.113,34.999 19.106,65.88 -13.074,104.234 -2.056,2.451 -13.482,10.697 -17.07,11.622 -16.034,4.135 -32.472,8.112 -49.03,7.99 -49.251,-0.364 -98.51,-3.946 -147.454,-9.442 -8.579,-0.963 -30.267,-4.592 -47.94,-38.861 -18.351003,-35.584 -37.165003,-140.674 13.802,-177.235 z" />
   <rect
-     frisk:name="Galbenia"
+     frisk:neighbours="country002,country003"
      style="fill:#ffee00;stroke:none;stroke-width:0.91928965"
      class="country"
      height="84.509346"
@@ -45,7 +45,7 @@
      x="153.85222"
      id="country001" />
   <rect
-     frisk:name="Roscata"
+    frisk:neighbours="country001,country003,country004"
      style="fill:#d24d4d;stroke:none"
      class="country"
      height="100"
@@ -54,8 +54,8 @@
      x="253.85222"
      id="country002" />
   <rect
-     frisk:name="Crema"
-     style="fill:#ffee99;stroke:none;stroke-width:1.07466578"
+    frisk:neighbours="country001,country002,country004"
+    style="fill:#ffee99;stroke:none;stroke-width:1.07466578"
      class="country"
      height="115.49065"
      width="100"
@@ -63,7 +63,7 @@
      x="153.85222"
      id="country003" />
   <rect
-     frisk:name="Verdenia"
+    frisk:neighbours="country002,country003,country004"
      style="fill:#219c05;stroke:none"
      class="country"
      height="100"
