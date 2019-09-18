@@ -1,12 +1,12 @@
-#mapobj {
-border: 1px solid #000;
-display: block;
+.hidden {
+  display: none;
 }
 
-#info input {
-font-size: 150%;
-font-weight: bold;
-border: 2px solid #999;
+#mapobj {
+  border: 1px solid #000;
+  display: block;
+  width: 32em;
+  margin: auto;
 }
 
 #players li {
@@ -31,28 +31,60 @@ border: 2px solid #999;
   text-decoration: line-through;
 }
 
-#dice li {
+#gamecontrols {
+  margin: 1em 0em;
+}
+
+#dice {
   display: inline-block;
-  list-style-type: none;
-  border-style: dashed;
-  border-width: 0.2ex;
-  border-color: red;
-  border-radius: 0.1ex;
-  margin: 1ex;
-  padding: 1ex;
-  min-height: 2em;
-  min-width: 2em;
-  line-height: 2em;
-  color: #600;
-  background-color: #ffcc99;
+}
+
+#dice ul {
+  display: inline-block;
+}
+
+#dice li, #btnattack {
+  display: inline-block;
+  margin: 0.5ex;
+  padding: 0.5ex;
+  min-height: 2ex;
+  min-width: 2ex;
+  line-height: 2ex;
   text-align: center;
   vertical-align: middle;
   font-weight: bold;
   font-size: 120%;
 }
 
+#dice li {
+  list-style-type: none;
+  border-style: dashed;
+  border-width: 0.2ex;
+  border-color: red;
+  border-radius: 0.1ex;
+  color: #600;
+  background-color: #ffcc99;
+}
+
 #dice li.inactive {
   color: #999;
   border-color: #999;
   background-color: #ffeedd;
+}
+
+#gamelog {
+  background-color: #eeeeee;
+  font-size: 80%;
+  padding : 1ex;
+  margin: 1ex;
+}
+
+#gamelog li {
+  list-style-type: square;
+  color: #333;
+}
+
+#gamelog li.action {
+  background: #ddffdd;
+  font-weight: bold;
 }

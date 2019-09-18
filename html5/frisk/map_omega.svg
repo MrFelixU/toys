@@ -11,23 +11,23 @@
     </linearGradient>
   </defs>
   <rect width="500" height="400" style="fill: url(#gradient-1);" bx:origin="0 0"/>
-  <path d="M 27.221 39.226 C 28.485 37.903 30.114 38.493 31.571 38.349 C 33.059 38.2 34.586 37.773 36.042 38.349 C 39.266 39.621 42.185 43.219 45.467 43.835 C 55.127 45.65 64.878 45.088 74.586 45.591 C 76.157 45.673 77.768 46.234 79.299 45.591 C 82.178 44.38 84.698 40.702 87.635 40.104 C 94.16 38.776 100.765 39.949 107.331 39.885 C 108.297 39.876 109.651 38.481 110.231 39.885 C 111.998 44.167 112.079 50.112 113.493 54.808 C 114.441 57.955 117.834 59.728 117.239 63.148 C 114.736 77.51 110.047 90.487 105.156 102.652 C 102.841 108.408 98.406 110.445 95.973 116.039 C 94.306 119.869 94.101 125.196 93.315 129.865 C 93.051 131.428 89.127 134.888 87.273 134.912 C 83.608 134.961 79.943 134.941 76.278 134.912 C 70.277 134.867 64.266 134.049 58.274 134.693 C 56.042 134.933 53.941 138.361 51.75 137.546 C 43.251 134.388 34.559 130.723 26.98 123.061 C 25.134 121.195 25.878 115.46 26.134 111.65 C 26.302 109.145 27.583 107.337 28.188 105.065 C 29.921 98.551 33.028 92.545 33.142 85.313 C 33.249 78.563 30.37 72.773 28.792 66.66 C 28.55 65.718 27.764 65.279 27.705 64.245 C 27.471 60.168 28.637 55.857 27.946 51.956 C 27.449 49.148 24.609 48.744 24.443 45.811 C 24.285 43.059 25.903 40.608 27.221 39.226 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 157, 121);" id="kyol" class="country"/>
-  <path d="M 267.309 158.719 C 273.555 158.132 263.369 115.687 269.586 116.522 C 279.223 117.817 260.518 91.63 261.26 81.934 C 264.321 41.933 282.172 69.782 225.224 25.767 C 222.592 23.733 149.079 17.56 125.631 31.844 C 109.311 41.785 117.762 60.146 117.239 63.148 C 114.875 76.714 110.293 89.876 105.156 102.652 C 103.137 107.673 98.132 111.077 95.973 116.039 C 94.101 120.342 94.095 125.237 93.315 129.865 C 93.046 131.46 59.285 168.193 53.318 168.834 C 50.958 169.087 132.168 168.108 129.943 167.281 C 120.978 163.949 142.525 200.903 162.443 166.563 C 168.84 155.534 205.744 172.614 205.61 170.26 C 205.475 167.882 264.937 158.942 267.309 158.719 Z" style="stroke: rgb(0, 0, 0); fill: rgb(105, 182, 94);" id="lumu" class="country"/>
-  <path d="M 204.534 321.715 C 206.694 276.578 211.047 189.551 210.048 199.224 C 206.125 237.212 189.11 210.201 167.955 214.093 C 164.684 214.695 205.797 224.609 182.349 238.893 C 166.029 248.834 177.233 267.194 176.71 270.196 C 174.346 283.762 104.796 287.449 99.099 267.3 C 89.758 234.263 30.951 244.888 28.792 249.85 C 26.92 254.153 20.307 301.449 19.527 306.077 C 19.258 307.672 19.072 332.558 29.089 345.045 C 42.075 361.233 115.648 343.769 113.423 342.942 C 104.458 339.61 128.758 378.766 148.676 344.426 C 155.073 333.397 180.964 361.491 180.83 359.137 C 180.695 356.759 203.785 337.371 204.534 321.715 Z" style="stroke: rgb(0, 0, 0); fill: rgb(147, 127, 218);" class="country" id="rhaga"/>
-  <path d="M 267.309 158.719 C 201.633 184.424 209.048 193.551 210.048 199.224 C 213.764 220.297 227.654 239.662 213.007 274.832 C 206.33 290.864 230.746 319.218 204.451 339.195 C 189.235 350.755 221.558 339.068 219.863 350.331 C 216.352 373.657 258.192 351.008 257.412 355.636 C 257.143 357.231 275.635 327.232 317.085 278.966 C 355.111 234.687 255.961 242.753 275.879 208.413 C 282.276 197.384 299.513 197.38 293.717 179.071 C 289.31 165.149 356.323 123.88 267.309 158.719 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 145, 0);" class="country" id="nak"/>
-  <path d="M 267.309 158.719 C 268.861 158.396 213.227 175.733 210.048 199.224 C 204.739 238.454 189.11 210.201 167.955 214.093 C 164.684 214.695 205.797 224.609 182.349 238.893 C 166.029 248.834 177.233 267.194 176.71 270.196 C 174.346 283.762 104.796 287.449 99.099 267.3 C 89.758 234.263 30.951 244.888 28.792 249.85 C 26.92 254.153 23.06 187.462 22.28 192.09 C 22.011 193.685 59.285 168.193 53.318 168.834 C 50.958 169.087 132.168 168.108 129.943 167.281 C 120.978 163.949 142.525 200.903 162.443 166.563 C 168.84 155.534 205.744 172.614 205.61 170.26 C 205.475 167.882 249.991 162.321 267.309 158.719 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 237, 184);" class="country" id="mereth"/>
-  <path d="M 267.309 158.719 C 273.555 158.132 263.369 115.687 269.586 116.522 C 279.223 117.817 260.518 91.63 261.26 81.934 C 264.321 41.933 282.172 69.782 225.224 25.767 C 222.592 23.733 347.317 28.022 358.01 43.958 C 368.657 59.826 409.623 50.722 446.288 33.499 C 446.671 33.319 471.73 44.294 465.763 44.935 C 463.403 45.188 475.781 65.134 465.847 107.259 C 463.652 116.568 454.198 162.907 427.31 168.765 C 414.852 171.479 402.09 166.478 312.989 145.481 C 303.27 143.191 264.937 158.942 267.309 158.719 Z" style="stroke: rgb(0, 0, 0); fill: rgb(226, 112, 197);" id="onshawa" class="country"/>
-  <path d="M 313.577 146.719 C 309.097 156.599 294.971 170.607 293.203 173.701 C 290.987 177.579 297.623 188.394 294.854 191.322 C 286.798 199.842 262.538 211.676 271.176 230.419 C 272.369 233.007 302.034 247.79 304.215 253.547 C 306.691 260.083 316.337 279.322 317.982 278.326 C 319.673 277.302 348.008 271.565 363.687 269.516 C 376.111 267.892 388.611 266.697 401.132 266.212 C 417.089 265.594 460.969 268.903 464.458 265.111 C 467.383 261.931 444.308 165.162 441.881 159.934 C 441.22 158.511 430.215 167.003 425.911 167.644 C 412.647 169.62 386.804 164.057 366.991 159.384 C 358.336 157.343 313.913 145.978 313.577 146.719 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 65, 65);" class="country" id="phlytan"/>
-  <path d="M 464.458 265.111 C 467.383 261.931 474.542 336.125 483.18 354.868 C 484.373 357.456 264.741 362.919 257.959 355.313 C 253.308 350.096 316.121 278.812 317.982 278.326 C 343.14 271.761 348.008 271.565 363.687 269.516 C 376.111 267.892 388.611 266.697 401.132 266.212 C 417.089 265.594 460.969 268.903 464.458 265.111 Z" style="stroke: rgb(0, 0, 0); fill: rgb(188, 164, 47);" class="country" id="trusk"/>
-  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="70.86" y="71.152" class="countrynamelabel" id="kyol-name">Kyol</text>
-  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="385.103" y="322.285" class="countrynamelabel" id="trusk-name">Trusk</text>
-  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="365.315" y="217.524" class="countrynamelabel" id="phlytan-name">Phlytan</text>
-  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="247.749" y="201.227" class="countrynamelabel" id="nak-name">Nak</text>
-  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="117.962" y="221.016" class="countrynamelabel" id="mereth-name">Mereth</text>
-  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="361.241" y="99.958" class="countrynamelabel" id="onshawa-name">Onshawa</text>
-  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="175.58" y="86.572" class="countrynamelabel" id="lumu-name">Lumu</text>
-  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="80.131" y="305.989" class="countrynamelabel" id="rhaga-name">Rhaga</text>
-  <g transform="matrix(1, 0, 0, 1, -4.712126, -47.128567)">
+  <path d="M 10.04 20.724 C 11.304 19.401 12.933 19.991 14.39 19.847 C 15.878 19.698 17.405 19.271 18.861 19.847 C 22.085 21.119 25.004 24.717 28.286 25.333 C 37.946 27.148 47.697 26.586 57.405 27.089 C 58.976 27.171 60.587 27.732 62.118 27.089 C 64.997 25.878 67.517 22.2 70.454 21.602 C 76.979 20.274 83.584 21.447 90.15 21.383 C 91.116 21.374 92.47 19.979 93.05 21.383 C 94.817 25.665 94.898 31.61 96.312 36.306 C 97.26 39.453 100.653 41.226 100.058 44.646 C 97.555 59.008 92.866 71.985 87.975 84.15 C 85.66 89.906 81.225 91.943 78.792 97.537 C 77.125 101.367 76.92 106.694 76.134 111.363 C 75.87 112.926 71.946 116.386 70.092 116.41 C 66.427 116.459 62.762 116.439 59.097 116.41 C 53.096 116.365 47.085 115.547 41.093 116.191 C 38.861 116.431 36.76 119.859 34.569 119.044 C 26.07 115.886 17.378 112.221 9.799 104.559 C 7.953 102.693 8.697 96.958 8.953 93.148 C 9.121 90.643 10.402 88.835 11.007 86.563 C 12.74 80.049 15.847 74.043 15.961 66.811 C 16.068 60.061 13.189 54.271 11.611 48.158 C 11.369 47.216 10.583 46.777 10.524 45.743 C 10.29 41.666 11.456 37.355 10.765 33.454 C 10.268 30.646 7.428 30.242 7.262 27.309 C 7.104 24.557 8.722 22.106 10.04 20.724 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 157, 121);" id="kyol" class="country" data-neighbours="lumu"/>
+  <path d="M 250.128 140.217 C 256.374 139.63 246.188 97.185 252.405 98.02 C 262.042 99.315 243.337 73.128 244.079 63.432 C 247.14 23.431 264.991 51.28 208.043 7.265 C 205.411 5.231 131.898 -0.942 108.45 13.342 C 92.13 23.283 100.581 41.644 100.058 44.646 C 97.694 58.212 93.112 71.374 87.975 84.15 C 85.956 89.171 80.951 92.575 78.792 97.537 C 76.92 101.84 76.914 106.735 76.134 111.363 C 75.865 112.958 42.104 149.691 36.137 150.332 C 33.777 150.585 114.987 149.606 112.762 148.779 C 103.797 145.447 125.344 182.401 145.262 148.061 C 151.659 137.032 188.563 154.112 188.429 151.758 C 188.294 149.38 247.756 140.44 250.128 140.217 Z" style="stroke: rgb(0, 0, 0); fill: rgb(105, 182, 94);" id="lumu" class="country" data-neighbours="kyol,onshawa,mereth"/>
+  <path d="M 187.353 303.213 C 189.513 258.076 193.866 171.049 192.867 180.722 C 188.944 218.71 171.929 191.699 150.774 195.591 C 147.503 196.193 188.616 206.107 165.168 220.391 C 148.848 230.332 160.052 248.692 159.529 251.694 C 157.165 265.26 87.615 268.947 81.918 248.798 C 72.577 215.761 13.77 226.386 11.611 231.348 C 9.739 235.651 3.126 282.947 2.346 287.575 C 2.077 289.17 1.891 314.056 11.908 326.543 C 24.894 342.731 98.467 325.267 96.242 324.44 C 87.277 321.108 111.577 360.264 131.495 325.924 C 137.892 314.895 163.783 342.989 163.649 340.635 C 163.514 338.257 186.604 318.869 187.353 303.213 Z" style="stroke: rgb(0, 0, 0); fill: rgb(147, 127, 218);" class="country" id="rhaga" data-neighbours="mereth,bogg"/>
+  <path d="M 250.128 140.217 C 184.452 165.922 191.867 175.049 192.867 180.722 C 196.583 201.795 210.473 221.16 195.826 256.33 C 189.149 272.362 213.565 300.716 187.27 320.693 C 172.054 332.253 204.377 320.566 202.682 331.829 C 199.171 355.155 241.011 332.506 240.231 337.134 C 239.962 338.729 258.454 308.73 299.904 260.464 C 337.93 216.185 238.78 224.251 258.698 189.911 C 265.095 178.882 282.332 178.878 276.536 160.569 C 272.129 146.647 339.142 105.378 250.128 140.217 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 145, 0);" class="country" id="nak" data-neighbours="mereth,lumu,onshawa,phlytan,bogg"/>
+  <path d="M 250.128 140.217 C 251.68 139.894 196.046 157.231 192.867 180.722 C 187.558 219.952 171.929 191.699 150.774 195.591 C 147.503 196.193 188.616 206.107 165.168 220.391 C 148.848 230.332 160.052 248.692 159.529 251.694 C 157.165 265.26 87.615 268.947 81.918 248.798 C 72.577 215.761 13.77 226.386 11.611 231.348 C 9.739 235.651 5.879 168.96 5.099 173.588 C 4.83 175.183 42.104 149.691 36.137 150.332 C 33.777 150.585 114.987 149.606 112.762 148.779 C 103.797 145.447 125.344 182.401 145.262 148.061 C 151.659 137.032 188.563 154.112 188.429 151.758 C 188.294 149.38 232.81 143.819 250.128 140.217 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 237, 184);" class="country" id="mereth" data-neighbours="rhaga,lumu,nak"/>
+  <path d="M 250.128 140.217 C 256.374 139.63 246.188 97.185 252.405 98.02 C 262.042 99.315 243.337 73.128 244.079 63.432 C 247.14 23.431 264.991 51.28 208.043 7.265 C 205.411 5.231 330.136 9.52 340.829 25.456 C 351.476 41.324 392.442 32.22 429.107 14.997 C 429.49 14.817 454.549 25.792 448.582 26.433 C 446.222 26.686 458.6 46.632 448.666 88.757 C 446.471 98.066 437.017 144.405 410.129 150.263 C 397.671 152.977 384.909 147.976 295.808 126.979 C 286.089 124.689 247.756 140.44 250.128 140.217 Z" style="stroke: rgb(0, 0, 0); fill: rgb(226, 112, 197);" id="onshawa" class="country" data-neighbours="lumu,nak,phlytan"/>
+  <path d="M 296.396 128.217 C 291.916 138.097 277.79 152.105 276.022 155.199 C 273.806 159.077 280.442 169.892 277.673 172.82 C 269.617 181.34 245.357 193.174 253.995 211.917 C 255.188 214.505 284.853 229.288 287.034 235.045 C 289.51 241.581 299.156 260.82 300.801 259.824 C 302.492 258.8 330.827 253.063 346.506 251.014 C 358.93 249.39 371.43 248.195 383.951 247.71 C 399.908 247.092 443.788 250.401 447.277 246.609 C 450.202 243.429 427.127 146.66 424.7 141.432 C 424.039 140.009 413.034 148.501 408.73 149.142 C 395.466 151.118 369.623 145.555 349.81 140.882 C 341.155 138.841 296.732 127.476 296.396 128.217 Z" style="stroke: rgb(0, 0, 0); fill: rgb(255, 65, 65);" class="country" id="phlytan" data-neighbours="nak,onshawa,trusk"/>
+  <path d="M 447.277 246.609 C 450.202 243.429 457.361 317.623 465.999 336.366 C 467.192 338.954 247.56 344.417 240.778 336.811 C 236.127 331.594 298.94 260.31 300.801 259.824 C 325.959 253.259 330.827 253.063 346.506 251.014 C 358.93 249.39 371.43 248.195 383.951 247.71 C 399.908 247.092 443.788 250.401 447.277 246.609 Z" style="stroke: rgb(0, 0, 0); fill: rgb(188, 164, 47);" class="country" id="trusk" data-neighbours="bogg,phlytan,nak"/>
+  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="53.679" y="52.65" class="countrynamelabel" id="kyol-name">Kyol</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="367.922" y="303.783" class="countrynamelabel" id="trusk-name">Trusk</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="348.134" y="199.022" class="countrynamelabel" id="phlytan-name">Phlytan</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="230.568" y="182.725" class="countrynamelabel" id="nak-name">Nak</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="100.781" y="202.514" class="countrynamelabel" id="mereth-name">Mereth</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="344.06" y="81.456" class="countrynamelabel" id="onshawa-name">Onshawa</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="158.399" y="68.07" class="countrynamelabel" id="lumu-name">Lumu</text>
+  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="62.95" y="287.487" class="countrynamelabel" id="rhaga-name">Rhaga</text>
+  <g transform="matrix(1, 0, 0, 1, -21.892742, -65.630768)">
     <polygon style="stroke: rgb(0, 0, 0); fill: rgb(255, 234, 0);" points="41.914 137.229 41.471 129.555 43.687 132.193 47.942 129.795 50.158 132.113 54.324 129.635 56.097 132.433 60.086 128.916 60.175 136.51"/>
     <g style="" transform="matrix(0.392724, 0, 0, 0.391031, 30.29557, 121.972641)">
       <g>
@@ -60,7 +60,7 @@
     </g>
   </g>
   <line style="stroke: rgb(0, 0, 0);" x1="61.42239413399948" y1="66.98497546914248" x2="61.42239413399948" y2="66.98497546914248"/>
-  <g transform="matrix(1, 0, 0, 1, 82.148567, -33.235962)">
+  <g transform="matrix(1, 0, 0, 1, 64.967949, -51.738163)">
     <polygon style="stroke: rgb(0, 0, 0); fill: rgb(255, 234, 0);" points="41.914 137.229 41.471 129.555 43.687 132.193 47.942 129.795 50.158 132.113 54.324 129.635 56.097 132.433 60.086 128.916 60.175 136.51"/>
     <g style="" transform="matrix(0.392724, 0, 0, 0.391031, 30.29557, 121.972641)">
       <g>
@@ -92,7 +92,7 @@
       </g>
     </g>
   </g>
-  <g transform="matrix(1, 0, 0, 1, 257.496216, -22.419064)">
+  <g transform="matrix(1, 0, 0, 1, 240.315598, -40.921265)">
     <polygon style="stroke: rgb(0, 0, 0); fill: rgb(255, 234, 0);" points="41.914 137.229 41.471 129.555 43.687 132.193 47.942 129.795 50.158 132.113 54.324 129.635 56.097 132.433 60.086 128.916 60.175 136.51"/>
     <g style="" transform="matrix(0.392724, 0, 0, 0.391031, 30.29557, 121.972641)">
       <g>
@@ -124,7 +124,7 @@
       </g>
     </g>
   </g>
-  <g transform="matrix(1, 0, 0, 1, 283.115204, 98.274773)">
+  <g transform="matrix(1, 0, 0, 1, 265.934601, 79.772568)">
     <polygon style="stroke: rgb(0, 0, 0); fill: rgb(255, 234, 0);" points="41.914 137.229 41.471 129.555 43.687 132.193 47.942 129.795 50.158 132.113 54.324 129.635 56.097 132.433 60.086 128.916 60.175 136.51"/>
     <g style="" transform="matrix(0.392724, 0, 0, 0.391031, 30.29557, 121.972641)">
       <g>
@@ -156,7 +156,7 @@
       </g>
     </g>
   </g>
-  <g transform="matrix(1, 0, 0, 1, 285.961761, 195.626877)">
+  <g transform="matrix(1, 0, 0, 1, 268.781158, 177.12468)">
     <polygon style="stroke: rgb(0, 0, 0); fill: rgb(255, 234, 0);" points="41.914 137.229 41.471 129.555 43.687 132.193 47.942 129.795 50.158 132.113 54.324 129.635 56.097 132.433 60.086 128.916 60.175 136.51"/>
     <g style="" transform="matrix(0.392724, 0, 0, 0.391031, 30.29557, 121.972641)">
       <g>
@@ -188,7 +188,7 @@
       </g>
     </g>
   </g>
-  <g transform="matrix(1, 0, 0, 1, 182.347229, 142.111679)">
+  <g transform="matrix(1, 0, 0, 1, 165.166611, 123.609474)">
     <polygon style="stroke: rgb(0, 0, 0); fill: rgb(255, 234, 0);" points="41.914 137.229 41.471 129.555 43.687 132.193 47.942 129.795 50.158 132.113 54.324 129.635 56.097 132.433 60.086 128.916 60.175 136.51"/>
     <g style="" transform="matrix(0.392724, 0, 0, 0.391031, 30.29557, 121.972641)">
       <g>
@@ -220,7 +220,7 @@
       </g>
     </g>
   </g>
-  <g transform="matrix(1, 0, 0, 1, 20.663042, 181.394104)">
+  <g transform="matrix(1, 0, 0, 1, 3.482425, 162.891907)">
     <polygon style="stroke: rgb(0, 0, 0); fill: rgb(255, 234, 0);" points="41.914 137.229 41.471 129.555 43.687 132.193 47.942 129.795 50.158 132.113 54.324 129.635 56.097 132.433 60.086 128.916 60.175 136.51"/>
     <g style="" transform="matrix(0.392724, 0, 0, 0.391031, 30.29557, 121.972641)">
       <g>
@@ -252,7 +252,7 @@
       </g>
     </g>
   </g>
-  <g transform="matrix(1, 0, 0, 1, 50.267189, 94.858894)">
+  <g transform="matrix(1, 0, 0, 1, 33.086571, 76.356689)">
     <polygon style="stroke: rgb(0, 0, 0); fill: rgb(255, 234, 0);" points="41.914 137.229 41.471 129.555 43.687 132.193 47.942 129.795 50.158 132.113 54.324 129.635 56.097 132.433 60.086 128.916 60.175 136.51"/>
     <g style="" transform="matrix(0.392724, 0, 0, 0.391031, 30.29557, 121.972641)">
       <g>
@@ -284,20 +284,59 @@
       </g>
     </g>
   </g>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="57.61" y="89.867" class="countryrulerlabel" id="kyol-ruler">Ruler</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="57.314" y="104.211" class="countryarmieslabel" id="kyol-armies">no.</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="148.469" y="103.634" class="countryrulerlabel" id="lumu-ruler">Ruler</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="148.173" y="117.978" class="countryarmieslabel" id="lumu-armies">no.</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="319.174" y="114.097" class="countryrulerlabel" id="onshawa-ruler">Ruler</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="318.878" y="128.441" class="countryarmieslabel" id="onshawa-armies">no.</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="245.936" y="280.397" class="countryrulerlabel" id="nak-ruler">Ruler</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="245.64" y="294.741" class="countryarmieslabel" id="nak-armies">no.</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="114.879" y="233.04" class="countryrulerlabel" id="mereth-ruler">Ruler</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="114.583" y="247.384" class="countryarmieslabel" id="mereth-armies">no.</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="81.839" y="320.044" class="countryrulerlabel" id="rhaga-ruler">Ruler</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="81.543" y="334.388" class="countryarmieslabel" id="rhaga-armies">no.</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="347.808" y="335.462" class="countryrulerlabel" id="trusk-ruler">Ruler</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="347.512" y="349.807" class="countryarmieslabel" id="trusk-armies">no.</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="346.156" y="237.995" class="countryrulerlabel" id="phlytan-ruler">Ruler</text>
-  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="345.86" y="252.34" class="countryarmieslabel" id="phlytan-armies">no.</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="40.429" y="71.365" class="countryrulerlabel" id="kyol-ruler">Ruler</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="40.133" y="85.709" class="countryarmieslabel" id="kyol-armies">no.</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="131.288" y="85.132" class="countryrulerlabel" id="lumu-ruler">Ruler</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="130.992" y="99.476" class="countryarmieslabel" id="lumu-armies">no.</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="301.993" y="95.595" class="countryrulerlabel" id="onshawa-ruler">Ruler</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="301.697" y="109.939" class="countryarmieslabel" id="onshawa-armies">no.</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="228.755" y="261.895" class="countryrulerlabel" id="nak-ruler">Ruler</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="228.459" y="276.239" class="countryarmieslabel" id="nak-armies">no.</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="97.698" y="214.538" class="countryrulerlabel" id="mereth-ruler">Ruler</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="97.402" y="228.882" class="countryarmieslabel" id="mereth-armies">no.</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="64.658" y="301.542" class="countryrulerlabel" id="rhaga-ruler">Ruler</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="64.362" y="315.886" class="countryarmieslabel" id="rhaga-armies">no.</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="330.627" y="316.96" class="countryrulerlabel" id="trusk-ruler">Ruler</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="330.331" y="331.305" class="countryarmieslabel" id="trusk-armies">no.</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="328.975" y="219.493" class="countryrulerlabel" id="phlytan-ruler">Ruler</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="328.679" y="233.838" class="countryarmieslabel" id="phlytan-armies">no.</text>
+  <path d="M 302.203 352.423 C 287.981 348.807 187.957 357.962 172.687 359.472 C 165.74 360.159 87.262 365.528 81.939 370.044 C 78.816 372.694 112.861 383.819 123.788 388.987 C 147.574 400.237 320.445 384.242 347.137 386.784 C 356.786 387.703 366.544 386.518 376.211 387.225 C 390.653 388.282 404.904 391.846 419.383 392.07 C 433.317 392.286 442.368 383.651 434.802 366.96 C 431.976 360.726 424.613 357.052 418.062 355.066 C 401.382 350.008 383.672 349.357 366.52 346.256 C 354.6 344.101 340.637 361.799 328.634 363.436" style="stroke: rgb(0, 0, 0); fill: rgb(216, 216, 216);" class="country" id="bogg" data-neighbours="rhaga,nak,trusk"/>
+  <line style="stroke: rgb(0, 0, 0);" x1="136.56387779944902" y1="366.07929823013586" x2="107.0484590492455" y2="309.25110392004257"/>
+  <line style="stroke: rgb(0, 0, 0);" x1="202.2026448707971" y1="362.1145404875712" x2="222.02643358362033" y2="329.9559499089913"/>
+  <line style="stroke: rgb(0, 0, 0);" x1="260.79295373314136" y1="363.43612640175945" x2="276.2114560653372" y2="330.396478547054"/>
+  <text style="fill: rgb(51, 51, 51); font-family: Acme; font-size: 24px; white-space: pre; text-anchor: middle;" x="389.508" y="377.792" class="countrynamelabel" id="bogg-name">Bogg</text>
+  <g transform="matrix(1, 0, 0, 1, 213.485077, 225.508759)">
+    <polygon style="stroke: rgb(0, 0, 0); fill: rgb(255, 234, 0);" points="41.914 137.229 41.471 129.555 43.687 132.193 47.942 129.795 50.158 132.113 54.324 129.635 56.097 132.433 60.086 128.916 60.175 136.51"/>
+    <g style="" transform="matrix(0.392724, 0, 0, 0.391031, 30.29557, 121.972641)">
+      <g>
+        <circle style="" cx="29.833" cy="51.398" r="6.027"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="29.417" y1="55.97" x2="29.417" y2="68.882"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="29.833" y1="68.44" x2="24.222" y2="76.129"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="30.041" y1="68.855" x2="34.821" y2="76.545"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="29.417" y1="61.997" x2="24.222" y2="63.036"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="30.041" y1="62.413" x2="35.652" y2="66.362"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="27.339" y1="66.154" x2="18.403" y2="46.202"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 39.694527, 0.207825)">
+        <circle style="" cx="29.833" cy="51.398" r="6.027"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="29.417" y1="55.97" x2="29.417" y2="68.882"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="29.833" y1="68.44" x2="24.222" y2="76.129"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="30.041" y1="68.855" x2="34.821" y2="76.545"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="29.417" y1="61.997" x2="24.222" y2="63.036"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="30.041" y1="62.413" x2="35.652" y2="66.362"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="27.339" y1="66.154" x2="18.403" y2="46.202"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 19.327702, -1.039124)">
+        <circle style="" cx="29.833" cy="51.398" r="6.027"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="29.417" y1="55.97" x2="29.417" y2="68.882"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="29.833" y1="68.44" x2="24.222" y2="76.129"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="30.041" y1="68.855" x2="34.821" y2="76.545"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="29.417" y1="61.997" x2="24.222" y2="63.036"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="30.041" y1="62.413" x2="35.652" y2="66.362"/>
+        <line style="stroke: rgb(0, 0, 0);" x1="27.339" y1="66.154" x2="18.403" y2="46.202"/>
+      </g>
+    </g>
+  </g>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="275.331" y="365.344" class="countryrulerlabel" id="bogg-ruler">Ruler</text>
+  <text style="font-family: Acme; font-size: 14px; white-space: pre;" x="275.035" y="379.689" class="countryarmieslabel" id="bogg-armies">no.</text>
 </svg>

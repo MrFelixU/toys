@@ -1,11 +1,12 @@
 var svgNS = "http://www.w3.org/2000/svg";
-var friskNS = "https://github.com/MrFelixU/toys";
 var currentplayeridx = null;
 var phase = null;
 var svgroot = null;
 var playernames = null;
 var countries = null;
 var armiestodeploy = null;
+var attackorigin = null;
+var attacktarget = null;
 
 window.addEventListener("load", initGame);
 
@@ -32,6 +33,8 @@ function loadCountries() {
   countries = svgroot.getElementsByClassName("country");
   for (i=0;i<countries.length;i++) {
     countries[i].addEventListener("click",countryClicked);
+    c = countries[i];
+    var neibs = getNeighboursOf(c);
   }
 }
 
@@ -40,8 +43,8 @@ function initPlayers() {
   // let's set up the players
   var numplayers = 0;
   while (numplayers < 2 ){
-    var str_players = prompt("Please enter at least two player names, separated by commas");
-    //var str_players = "Tom,Dick,Harriet";
+    //var str_players = prompt("Please enter at least two player names, separated by commas");
+    var str_players = "Tom,Dick,Harriet";
     playernames = str_players.split(",");
     for (i=0; i<playernames.length; i++) playernames[i] = playernames[i].trim();
     numplayers = playernames.length;
@@ -56,6 +59,7 @@ function initPlayers() {
     el_players.appendChild(newplayerli);
   }
   el_players.removeChild(playertemplate);
+  logMessage("Initialised " + playernames.length + " players.");
 }
 
 function initCountries() {
@@ -73,13 +77,16 @@ function setupFirstPhase() {
   currentplayeridx = 0;
   phase = "DEPLOY";
   armiestodeploy = 3;
+  logMessage(
+    "Player " + playernames[currentplayeridx] +
+    " to deploy " + armiestodeploy + " armies",
+    "action");
 }
 
 function updateInfo() {
   // display each country's ruler and number of armies
   for (i=0; i < countries.length; i++) {
     var c = countries[i];
-    console.log("updating "+c.id);
     textEl = svgroot.getElementById(c.id + "-armies");
     textEl.textContent = c.getAttribute("data-armies");
     textEl = svgroot.getElementById(c.id + "-ruler");
@@ -91,7 +98,6 @@ function updateInfo() {
   playernames.forEach(
     function (pname,pidx,pnames){
       playerstats = countPlayerArmiesAndCountries(pidx);
-
 
       p_el_id = "player" + (pidx+"").padStart(2,"0");
       p_el = document.getElementById(p_el_id);
@@ -106,7 +112,7 @@ function updateInfo() {
 }
 
 function countryClicked(e){
-  console.log("we're in the "+phase+" phase with a target of "+e.target.id);
+  console.log("CLICKED!  We're in the "+phase+" phase with a target of "+e.target.id);
   el_country = e.target;
   if (phase == "DEPLOY") {
     if (el_country.getAttribute("data-ruler") == currentplayeridx) {
@@ -115,11 +121,24 @@ function countryClicked(e){
     }
     if (armiestodeploy <=0) {
       phase = "ATTACK";
+      let pname = playernames[currentplayeridx];
+      logMessage(`Player ${pname} ready to attack; click origin and target`, "action");
+    }
+  }
+  if (phase == "ATTACK") {
+    // has player already chosen where to attack from?
+    if (attackorigin && canAttack(attackorigin, e)) {
+      attacktarget = e;
+      let oname = attackorigin
+      document.getElementById("btnattack").value = "Attack "
     }
   }
   updateInfo();
 }
 
+function attackButtonClicked() {
+
+}
 /* ****************************************************************************
 
    UTILITY FUNCTIONS
@@ -158,4 +177,26 @@ function countPlayerArmiesAndCountries(pidx) {
 function calculateDeployableArmies(pidx) {
   pcountries = countPlayerArmiesAndCountries(pidx).countries;
   return Math.min(3, Math.floor(pcountries / 3));
+}
+
+// get an array of country objects which neighbour c
+function getNeighboursOf(c) {
+  var str_neibs = c.getAttribute("data-neighbours").split(",");
+  var neighbours = [];
+
+  for (let j=0; j < str_neibs.length; j++) {
+    var n = str_neibs[j].trim();
+    if (n) {
+      neighbours.push(svgroot.getElementById(n));
+    }
+  }
+  return neighbours;
+}
+
+function logMessage(msg="", msgclass="") {
+  var t = document.getElementById("logentrytemplate");
+  var e = t.cloneNode();
+  e.setAttribute("class", msgclass);
+  e.innerHTML = msg;
+  t.parentNode.prepend(e);
 }
