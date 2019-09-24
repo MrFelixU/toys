@@ -5,26 +5,38 @@
 #mapobj {
   border: 1px solid #000;
   display: block;
-  width: 32em;
   margin: auto;
 }
 
 #players li {
   list-style-type: none;
+  clear: both;
+}
+
+#players li.turn {
+  background-color: orange;
 }
 
 #players li span:first-of-type {
   font-size: 150%;
   font-weight: bold;
   border: none;
+  float: none;
 }
 
-#players span {
+#players li span {
   margin: 0ex 1ex;
   padding: 0ex 1ex;
-  border-style: solid;
-  border-size: 0.1ex 0ex 0.1ex 0ex;
+  border-style: dashed;
+  border-width: 0.1ex 0ex 0.1ex 0ex;
   border-color: black;
+  text-align: center;
+}
+#players li span {
+  float: right;
+}
+#players .playerphase {
+  width: 10em;
 }
 
 #players .inactive {
@@ -43,7 +55,7 @@
   display: inline-block;
 }
 
-#dice li, #btnattack {
+#dice li, .button {
   display: inline-block;
   margin: 0.5ex;
   padding: 0.5ex;
